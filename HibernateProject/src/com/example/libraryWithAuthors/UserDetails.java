@@ -35,14 +35,15 @@ public class UserDetails {
 	
 	@Id
 	@GeneratedValue
-	private int userId;
+	private int id;
 	
 	private String userName;
 //	@OneToOne
-//	@JoinColumn(name="VIHICLE_ID")
-	@OneToMany
-	@JoinTable(name= "User_Vehicle", joinColumns = @JoinColumn(name = "USER_ID"), inverseJoinColumns = @JoinColumn(name = "VEHICLE_ID"))
-	private Collection<Vehicle> vehicle = new ArrayList<Vehicle>();
+////	@JoinColumn(name="VIHICLE_ID")
+//	@OneToMany
+//	@JoinColumn(name = "user_id")
+//	//@JoinTable(name= "User_Vehicle", joinColumns = @JoinColumn(name = "USER_ID"), inverseJoinColumns = @JoinColumn(name = "VEHICLE_ID"))
+//	private Collection<Vehicle> vehicle = new ArrayList<Vehicle>();
 	
 	
 	
@@ -113,14 +114,14 @@ public class UserDetails {
 //		this.description = description;
 //	}
 	public int getUserId() {
-		return userId;
+		return id;
 	}
-public Collection<Vehicle> getVehicle() {
-		return vehicle;
-	}
-	public void setVehicle(Collection<Vehicle> vehicle) {
-		this.vehicle = vehicle;
-	}
+//	public Collection<Vehicle> getVehicle() {
+//		return vehicle;
+//	}
+//	public void setVehicle(Collection<Vehicle> vehicle) {
+//		this.vehicle = vehicle;
+	//}
 	//public Collection<Adress> getListOfAddress() {
 //		return listOfAddress;
 //	}
@@ -134,7 +135,7 @@ public Collection<Vehicle> getVehicle() {
 //		this.homeAddress = address;
 //	}
 	public void setUserId(int userId) {
-		this.userId = userId;
+		this.id = userId;
 	}
 	public String getUserName() {
 		return userName;

@@ -6,7 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HibernateFirst"/>
 	<classpathentry kind="lib" path="C:/Users/Sofi/Downloads/postgresql-42.2.18.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
@@ -17,5 +16,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Sofi/Downloads/lombok.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/HibernateFirst"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 public class Vehicle {
 	@Id
 	@GeneratedValue
-	private int vehicleId;
+	private int id;
 	private String vehicleName;
 	
 	@ManyToOne
@@ -22,10 +22,10 @@ public class Vehicle {
 		this.user = user;
 	}
 	public int getVehicleId() {
-		return vehicleId;
+		return id;
 	}
 	public void setVehicleId(int vehicleId) {
-		this.vehicleId = vehicleId;
+		this.id = vehicleId;
 	}
 	public String getVehicleName() {
 		return vehicleName;
