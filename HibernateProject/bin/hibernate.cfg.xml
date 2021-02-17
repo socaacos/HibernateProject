@@ -24,8 +24,10 @@
 		
 		<mapping class="com.example.libraryWithAuthors.UserDetails"/>
 		<mapping class="com.example.libraryWithAuthors.Vehicle"/>
-		<mapping class="com.example.libraryWithAuthors.entities.Book"/>
-		<mapping class="com.example.libraryWithAuthors.entities.Author"/>
+		<mapping class="com.example.libraryWithAuthors.TwoWheeler"/>
+		<mapping class="com.example.libraryWithAuthors.FourWheeler"/>
+		
+		
 		
 	</session-factory>
 </hibernate-configuration>
