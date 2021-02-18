@@ -19,6 +19,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.Lob;
+import javax.persistence.NamedNativeQuery;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -34,6 +36,9 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "UserInfo")
+@org.hibernate.annotations.Entity(selectBeforeUpdate = true)
+@NamedQuery(name="UserDetails.byId", query = "from UserDetails where id = ?")
+//@NamedNativeQuery(name="UserDetails.byName", query = "select * from userinfro where username = ?", resultClass = UserDetails.class)
 public class UserDetails {
 	
 	@Id
